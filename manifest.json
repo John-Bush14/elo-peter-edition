@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ELO Peter Edition",
+  "version": "0.1",
+  "description": "Enhances the 'Elektronische Leer Omgeving' (elo) experience. (this description is not chatgpt-generated)",
+  "icons": {},
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://simplesaml.ritacollege.be/simplesaml/module.php/core/loginuserpass*"],
+      "js": ["login.js"]
+    }
+  ]
+}
+
