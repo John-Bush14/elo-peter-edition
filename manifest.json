@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "ELO Peter Edition",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Enhances the 'Elektronische Leer Omgeving' (elo) experience. (this description is not chatgpt-generated)",
   "icons": {},
   "permissions": [
