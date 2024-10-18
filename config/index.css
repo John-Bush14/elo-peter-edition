@@ -20,4 +20,5 @@ fieldset {
 
 legend {
    color: white;
+   font-weight: bold;
 }
