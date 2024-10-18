@@ -8,7 +8,7 @@
     "activeTab",
     "storage"
   ],
-  "options_page": "config.html",
+  "options_page": "config/index.html",
   "content_scripts": [
     {
       "matches": ["https://simplesaml.ritacollege.be/simplesaml/module.php/core/loginuserpass*"],
