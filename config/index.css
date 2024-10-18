@@ -1,5 +1,8 @@
 body {
    background-color: #202124;
+
+   font-size: 1em;
+   font-family: "Segoe UI", "San Francisco", Ubuntu, "Open Sans", Roboto, Arial, sans-serif;
 }
 
 fieldset {
@@ -17,5 +20,4 @@ fieldset {
 
 legend {
    color: white;
-   font-size: 1em;
 }
