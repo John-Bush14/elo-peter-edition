@@ -1,9 +1,6 @@
 if (chrome != undefined) {browser = chrome;}
 
 
-const formData = new URLSearchParams();
-
-
 let submit_button = document.querySelector("#submit_button");
 
 submit_button.type = "";
@@ -24,22 +21,9 @@ browser.storage.local.get(['username', 'password'], function(config) {
       return;
    }
 
-   formData.append('username', config.username);
-   formData.append('password', config.password);
 
+   form.children[0].children[1].value = config.username;
+   form.children[1].children[1].value = config.password;
 
-   fetch(window.location.href, {
-      method: "POST",
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'}, // don't ask me man ask chat-gpt
-      body: formData.toString(),
-   })
-   .then(response => {
-      if (response.ok) {console.log('Login response successful')} 
-      else {
-         console.log('Login response failed', response.status)
-      }
-   })
-   .catch(error => {
-      console.error('Error posting login:', error);
-   });
+   form.submit();
 });
