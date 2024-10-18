@@ -4,6 +4,8 @@ body {
    font-size: 1em;
    font-family: "Segoe UI", "San Francisco", Ubuntu, "Open Sans", Roboto, Arial, sans-serif;
    margin: 0;
+   
+   color: white;
 }
 
 fieldset {
@@ -20,7 +22,6 @@ fieldset {
 }
 
 legend {
-   color: white;
    font-weight: bold;
 }
 
@@ -34,4 +35,9 @@ nav {
    box-shadow: #000000 0px .25em .5em -.25em;
 
    margin: 0; margin-bottom: 3%;
+}
+
+.centered {
+   display: flex;
+   justify-content: center; 
 }
