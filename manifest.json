@@ -15,7 +15,11 @@
       "js": ["login.js"]
     },
     {
-      "matches": ["https://elo.ritacollege.be/moodle/my/"],
+      "matches": [
+         "https://elo.ritacollege.be/moodle/my/",
+         "https://elo.ritacollege.be/moodle/my/courses.php",
+         "https://elo.ritacollege.be/moodle/?redirect=0"
+      ],
       "js": ["homepage.js"]
     }
   ]
