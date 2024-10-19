@@ -55,6 +55,10 @@ nav {
    margin: 0; margin-bottom: 3%;
 }
 
+.button {
+   width: 2%
+}
+
 .centered {
    display: flex;
    justify-content: center; 
