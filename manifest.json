@@ -13,6 +13,10 @@
     {
       "matches": ["https://simplesaml.ritacollege.be/simplesaml/module.php/core/loginuserpass*"],
       "js": ["login.js"]
+    },
+    {
+      "matches": ["https://elo.ritacollege.be/moodle/my/"],
+      "js": ["homepage.js"]
     }
   ]
 }
