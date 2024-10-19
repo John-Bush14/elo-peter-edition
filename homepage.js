@@ -16,7 +16,9 @@ browser.storage.local.get([
    "krantenarchief",
    "portfolio"
 ], (config) => {
-   if (config["ch-titles"]) {  
+   console.log(config)
+
+   if (config["ch-titles"] == "true") {  
       let title_tag = document.querySelector("h1");
       let title = title_tag.textContent;
 
@@ -31,7 +33,7 @@ browser.storage.local.get([
       }
    }
 
-   if (config["dashboard"] && document.querySelectorAll("h3")[1].textContent == "Sint-Rita") {
+   if (config["dashboard"] == "true" && document.querySelectorAll("h3")[1].textContent == "Sint-Rita") {
       let title_tag = document.querySelectorAll("h3")[1];
 
       title_tag.textContent = config["titel"]

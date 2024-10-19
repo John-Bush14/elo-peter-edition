@@ -27,9 +27,15 @@ browser.storage.local.get(Object.keys(keys), (config) => {
 
       document.getElementById(key).value = config[key];
 
+      if (document.getElementById(key).type == "checkbox") {
+         document.getElementById(key).checked = config[key] == true || config[key] == "true"
+      }
+
       browser.storage.local.set(config);
 
       document.getElementById(key).addEventListener('input', (event) => {
+         if (event.target.type == "checkbox") {event.target.value = event.target.checked;}
+
          let set_dir = {}; set_dir[event.target.id] = event.target.value;
          browser.storage.local.set(set_dir);
       })
