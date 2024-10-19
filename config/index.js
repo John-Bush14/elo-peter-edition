@@ -2,7 +2,19 @@ if (chrome != undefined) {browser = chrome;}
 
 
 const keys = {
-   "greeting": "Heil Peter Van Den Heuvel"
+   "ch-titles": false,
+   "greeting": "Goodmornin",
+   "mijn-startpagina": "God does not exist",
+   "mijn-cursussen": "Heil Peter Van Den Heuvel",
+   "startpagina": "Wa you doin here",
+
+   "dashboard": false,
+   "titel": "Is god real?",
+   "e-mail": "nah",
+   "agenda": "elo-agenda",
+   "account": "Free Vbucks!",
+   "krantenarchief": "Girly gall what?",
+   "portfolio": "Wrm is dit hier?"
 };
 
 
