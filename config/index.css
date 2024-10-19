@@ -59,6 +59,10 @@ nav {
    width: 2%
 }
 
+.scope {
+   margin-left: 5%
+}
+
 .centered {
    display: flex;
    justify-content: center; 
