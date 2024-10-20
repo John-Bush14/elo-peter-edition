@@ -1,6 +1,15 @@
 if (chrome != undefined) {browser = chrome;}
 
 
+const selections = {
+   "open-actions": [
+      "do not",
+      "new window",
+      "new tab",
+      "redirect"
+   ]
+}
+
 const keys = {
    "ch-titles": false,
    "greeting": "Goodmornin",
@@ -16,6 +25,22 @@ const keys = {
    "krantenarchief": "Girly gall what?",
    "portfolio": "Wrm is dit hier?"
 };
+
+
+for (let select of document.querySelectorAll('select')) {
+
+   for (let option of selections[select.getAttribute('selection')]) {
+      let option_tag = document.createElement('option');
+      
+      option_tag.value = option; option_tag.textContent = option;
+
+      if (option == "new tab") {
+         option_tag.selected = true;
+      }
+
+      select.appendChild(option_tag);
+   }
+}
 
 
 browser.storage.local.get(Object.keys(keys), (config) => {
