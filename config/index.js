@@ -23,7 +23,14 @@ const keys = {
    "agenda": "elo-agenda",
    "account": "Free Vbucks!",
    "krantenarchief": "Girly gall what?",
-   "portfolio": "Wrm is dit hier?"
+   "portfolio": "Wrm is dit hier?",
+
+   "dashboard-open-actions": true,
+   "e-mail-oa": "new tab",
+   "agenda-oa": "new tab",
+   "account-oa": "new tab",
+   "krantenarchief-oa": "new tab",
+   "portfolio-oa": "new tab",
 };
 
 
